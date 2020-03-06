@@ -5,8 +5,8 @@ metadata:
     deployment.kubernetes.io/revision: "1"
   generation: 1
   labels:
-    run: astros
-  name: astros
+    run: gpu-demo
+  name: gpu-demo
   namespace: default
 spec:
   progressDeadlineSeconds: 600
