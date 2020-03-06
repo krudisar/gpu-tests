@@ -25,7 +25,7 @@ spec:
         imagePullPolicy: Always
         name: gpu-demo
       nodeSelector: 
-        cloud.google.com/gke-accelerator: nvidia-tesla-k80
+        gke-accelerator: nvidia-tesla-k80
       restartPolicy: Always
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 30
