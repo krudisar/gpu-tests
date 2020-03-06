@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - image: centos:centos7.7.1908
-        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+        #command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         imagePullPolicy: Always
         name: gpu-demo
         env: 
