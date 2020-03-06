@@ -20,15 +20,19 @@ spec:
         run: gpu-demo
     spec:
       containers:
-      - image: centos:centos7.7.1908
-        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
+      - name: gpu-demo 
+        image: centos:centos7.7.1908
+        command: ["/bin/bash"]
+        resources:
+          limits:
+           nvidia.com/gpu: 2
+#        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         imagePullPolicy: Always
-        name: gpu-demo
         env: 
         - name: LD_LIBRARY_PATH
           value: "/usr/local/nvidia/lib64:/usr/local/nvidia/bin"
-      nodeSelector: 
-        cloud.google.com/gke-accelerator: nvidia-tesla-k80
+#      nodeSelector: 
+#        cloud.google.com/gke-accelerator: nvidia-tesla-k80
       restartPolicy: Always
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 30
