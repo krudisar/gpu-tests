@@ -24,6 +24,9 @@ spec:
         #command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         imagePullPolicy: Always
         name: gpu-demo
+        env: 
+        - name: LD_LIBRARY_PATH
+          value: "/usr/local/nvidia/lib64:/usr/local/nvidia/bin"
       nodeSelector: 
         cloud.google.com/gke-accelerator: nvidia-tesla-k80
       restartPolicy: Always
