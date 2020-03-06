@@ -10,7 +10,7 @@ metadata:
   namespace: default
 spec:
   progressDeadlineSeconds: 600
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       run: gpu-demo
