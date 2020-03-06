@@ -20,7 +20,7 @@ spec:
         run: gpu-demo
     spec:
       containers:
-      - image: krudisar/gpu-demo:v2
+      - image: krudisar/gpu-demo:v3
         command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         imagePullPolicy: Always
         name: gpu-demo
