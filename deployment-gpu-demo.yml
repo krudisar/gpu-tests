@@ -21,6 +21,7 @@ spec:
     spec:
       containers:
       - image: krudisar/gpu-demo:v2
+        command: [ "/bin/bash", "-ce", "tail -f /dev/null" ]
         imagePullPolicy: Always
         name: gpu-demo
       restartPolicy: Always
