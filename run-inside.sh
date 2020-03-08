@@ -23,12 +23,22 @@ echo
 echo
 
 # download the ML TensorFlow sample script
-wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test.py
-python3 tf-test.py
+wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-1.py
+python3 tf-test-1.py
 
 echo
 echo
 echo
+
+# download the ML TensorFlow sample script to ensure that it is running on GPU
+wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
+python3 tf-test-2.py
+
+echo
+echo
+echo
+
+echo "Finished ..."
 
 
 
