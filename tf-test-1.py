@@ -19,5 +19,5 @@ model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
-model.fit(x_train, y_train, epochs=10) # changed number of epochs from 5-10
+model.fit(x_train, y_train, epochs=15) # changed number of epochs from 5-10
 model.evaluate(x_test, y_test)
