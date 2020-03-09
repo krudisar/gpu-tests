@@ -21,7 +21,7 @@ echo
 echo
 
 # get & execute the TensorFlow device check script
-https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-1.py
+wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-1.py
 python3 gpu-test-1.py
 
 echo
@@ -37,8 +37,8 @@ echo
 echo
 
 # download the ML TensorFlow sample script to ensure that it is running on GPU
-wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
-python3 tf-test-2.py
+# wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
+# python3 tf-test-2.py
 
 echo
 echo
