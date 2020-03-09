@@ -26,16 +26,32 @@ echo "  ----  ----  SIMPLE GPU TEST #1  ----  ----"
 echo
 
 # get & execute the TensorFlow device check script
-wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-3.py
-python3 /workspace/gpu-test/gpu-test-3.py
+wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-1.py
+python3 /workspace/gpu-test/gpu-test-1.py
 
 echo
 echo "  ----  ----  SIMPLE GPU TEST #2  ----  ----"
 echo
 
 # get & execute the TensorFlow device check script
+wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-3.py
+python3 /workspace/gpu-test/gpu-test-3.py
+
+echo
+echo "  ----  ----  SIMPLE GPU TEST #3  ----  ----"
+echo
+
+# get & execute the TensorFlow device check script
 wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-4.py
 python3 /workspace/gpu-test/gpu-test-4.py
+
+echo
+echo "  ----  ----  EXECUTE TF GPU CHECK  ----  ----"
+echo
+
+# get & execute the TensorFlow device check script
+wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
+python3 /workspace/gpu-test/tf-test-2.py
 
 echo
 echo "  ----  ----  EXECUTE TF JOB  ----  ----"
