@@ -13,16 +13,16 @@ warnings.simplefilter('ignore', category=UserWarning)
 
 # normal function to run on cpu 
 def func(a):                                 
-    for i in range(1000000000): 
+    for i in range(100000000): 
         a[i]+= 1      
   
 # function optimized to run on gpu  
 @jit(target ="cuda")                           
 def func2(a): 
-    for i in range(1000000000): 
+    for i in range(100000000): 
         a[i]+= 1
 if __name__=="__main__": 
-    n = 1000000000                            
+    n = 100000000                            
     a = np.ones(n, dtype = np.float64) 
     b = np.ones(n, dtype = np.float32) 
       
