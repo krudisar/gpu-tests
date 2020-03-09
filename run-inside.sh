@@ -7,6 +7,10 @@
 echo Going to sleep for 10s ...
 sleep 10
 
+# create a directory for our tests
+mkdir gpu-test
+cd gpu-test
+
 # install Python3 module to access NVIDIA GPU and check the status
 pip3 install pynvml
 wget -N https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-show.py
@@ -18,7 +22,7 @@ echo
 
 # get & execute the TensorFlow device check script
 https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-1.py
-python3 gpu-tes-1.py
+python3 gpu-test-1.py
 
 echo
 echo
