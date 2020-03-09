@@ -28,6 +28,14 @@ echo
 echo "  ----  ----  ----  ----"
 echo
 
+# get & execute the TensorFlow device check script
+wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-4.py
+python3 /workspoace/gpu-test/gpu-test-4.py
+
+echo
+echo "  ----  ----  ----  ----"
+echo
+
 # download the ML TensorFlow sample script
 wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-1.py
 python3 /workspoace/gpu-test/tf-test-1.py
