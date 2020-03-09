@@ -14,7 +14,7 @@ cd gpu-test
 # install Python3 module to access NVIDIA GPU and check the status
 pip3 install pynvml
 wget -N https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-show.py
-python gpu-test/gpu-show.py
+python3 gpu-test/gpu-show.py
 
 echo
 echo
