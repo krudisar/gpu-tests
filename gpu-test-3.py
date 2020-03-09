@@ -16,8 +16,8 @@ def func(a):
     for i in range(100000000): 
         a[i]+= 1      
   
-# function optimized to run on gpu  
-@jit(target ="cuda")                           
+# function optimized to run on gpu  - (target="cuda")
+@jit                           
 def func2(a): 
     for i in range(100000000): 
         a[i]+= 1
