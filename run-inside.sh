@@ -16,7 +16,7 @@ echo "  ----  ----  ----  ----"
 echo
 
 # install Python3 module to access NVIDIA GPU and check the status
-pip3 install pynvml
+pip3 install pynvml | grep -v 'already satisfied'
 wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-show.py
 python3 /workspace/gpu-test/gpu-show.py
 
