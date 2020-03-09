@@ -1,16 +1,29 @@
-# pip install gpuinfo
-from gpuinfo import GPUInfo
+import numpy as np
+import time
 
-available_device=GPUInfo.check_empty()
-percent,memory=GPUInfo.gpu_usage()
-min_percent=percent.index(min([percent[i] for i in available_device]))
-min_memory=memory.index(min([memory[i] for i in available_device]))
+from numba import vectorize, cuda
 
-print(GPUInfo.get_info())
+@vectorize(['float32(float32, float32)'], target='cuda')
+def VectorAdd(a, b):
+    return a + b
 
-print(".\n.\n.")
+def main():
+    N = 32000000
 
-print("Available devices: " + available_device + "\n\n\n")
-print("CPU Usage: " + percent)
-print("Available memory : " + memory)
+    A = np.ones(N, dtype=np.float32)
+    B = np.ones(N, dtype=np.float32)
+
+    start = time.time()
+    C = VectorAdd(A, B)
+    vector_add_time = time.time() - start
+
+    print("C[:5] = " + str(C[:5]))
+    print("C[-5:] = " + str(C[-5:]))
+
+    print("VectorAdd took for % seconds" % vector_add_time)
+
+if __name__=='__main__':
+    main()
+
+
 
