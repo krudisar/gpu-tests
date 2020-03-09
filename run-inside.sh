@@ -45,13 +45,13 @@ echo
 wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-4.py
 python3 /workspace/gpu-test/gpu-test-4.py
 
-echo
-echo "  ----  ----  EXECUTE TF GPU CHECK  ----  ----"
-echo
+#echo
+#echo "  ----  ----  EXECUTE TF GPU CHECK  ----  ----"
+#echo
 
 # get & execute the TensorFlow device check script
-wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
-python3 /workspace/gpu-test/tf-test-2.py
+#wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
+#python3 /workspace/gpu-test/tf-test-2.py
 
 echo
 echo "  ----  ----  EXECUTE TF JOB  ----  ----"
