@@ -11,6 +11,10 @@ sleep 10
 mkdir gpu-test
 cd gpu-test
 
+echo
+echo "  ----  ----  ----  ----"
+echo
+
 # install Python3 module to access NVIDIA GPU and check the status
 pip3 install pynvml
 wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-show.py
@@ -48,11 +52,7 @@ echo
 # wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
 # python3 /workspace/gpu-test/tf-test-2.py
 
-echo
-echo "  ----  ----  ----  ----"
-echo
-
-echo "Finished ..."
+echo "  ... Finished ..."
 
 
 
