@@ -46,14 +46,13 @@ wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-1.py
 python3 /workspace/gpu-test/tf-test-1.py
 
 echo
-echo "  ----  ----  ----  ----"
+echo "  ----  ----  ... DONE ... ----  ----"
 echo
 
 # download the ML TensorFlow sample script to ensure that it is running on GPU
 # wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
 # python3 /workspace/gpu-test/tf-test-2.py
 
-echo "  ... Finished ..."
 echo
 echo
 echo
