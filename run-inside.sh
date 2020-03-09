@@ -14,26 +14,26 @@ cd gpu-test
 # install Python3 module to access NVIDIA GPU and check the status
 pip3 install pynvml
 wget -N https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-show.py
-python3 gpu-test/gpu-show.py
+python3 /workspoace/gpu-test/gpu-show.py
 
 echo
-echo
+echo "  ----  ----  ----  ----"
 echo
 
 # get & execute the TensorFlow device check script
-wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-1.py
-python3 gpu-test/gpu-test-1.py
+wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-3.py
+python3 /workspoace/gpu-test/gpu-test-3.py
 
 echo
-echo
+echo "  ----  ----  ----  ----"
 echo
 
 # download the ML TensorFlow sample script
 wget https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-1.py
-python3 gpu-test/tf-test-1.py
+python3 /workspoace/gpu-test/tf-test-1.py
 
 echo
-echo
+echo "  ----  ----  ----  ----"
 echo
 
 # download the ML TensorFlow sample script to ensure that it is running on GPU
@@ -41,7 +41,7 @@ echo
 # python3 gpu-test/tf-test-2.py
 
 echo
-echo
+echo "  ----  ----  ----  ----"
 echo
 
 echo "Finished ..."
