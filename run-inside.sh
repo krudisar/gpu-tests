@@ -12,7 +12,7 @@ mkdir gpu-test
 cd gpu-test
 
 echo
-echo "  ----  ----  ----  ----"
+echo "  ----  ----  GPU CARD INFO: ----  ----"
 echo
 
 # install Python3 module to access NVIDIA GPU and check the status
@@ -21,7 +21,7 @@ wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-show.py
 python3 /workspace/gpu-test/gpu-show.py
 
 echo
-echo "  ----  ----  ----  ----"
+echo "  ----  ----  SIMPLE GPU TEST #1  ----  ----"
 echo
 
 # get & execute the TensorFlow device check script
@@ -29,7 +29,7 @@ wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/gpu-test-3.p
 python3 /workspace/gpu-test/gpu-test-3.py
 
 echo
-echo "  ----  ----  ----  ----"
+echo "  ----  ----  SIMPLE GPU TEST #2  ----  ----"
 echo
 
 # get & execute the TensorFlow device check script
@@ -45,9 +45,9 @@ echo
 # wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-1.py
 # python3 /workspace/gpu-test/tf-test-1.py
 
-echo
-echo "  ----  ----  ----  ----"
-echo
+#echo
+#echo "  ----  ----  ----  ----"
+#echo
 
 # download the ML TensorFlow sample script to ensure that it is running on GPU
 # wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-2.py
