@@ -1,8 +1,15 @@
 from numba import jit, cuda 
 import numpy as np 
 # to measure exec time 
-from timeit import default_timer as timer    
-  
+from timeit import default_timer as timer   
+
+# ---- to suppress warnings do this ----
+from numba.errors import NumbaDeprecationWarning, NumbaPendingDeprecationWarning
+import warnings
+warnings.simplefilter('ignore', category=NumbaDeprecationWarning)
+warnings.simplefilter('ignore', category=NumbaPendingDeprecationWarning)
+# --------------------------------------
+
 # normal function to run on cpu 
 def func(a):                                 
     for i in range(10000000): 
