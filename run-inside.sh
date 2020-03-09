@@ -58,7 +58,6 @@ echo "  ----  ----  EXECUTE TF JOB  ----  ----"
 echo
 
 # download the ML TensorFlow sample script
-# THIS IS STILL RUNNING ON CPU -> find another NVIDIA image 
 wget -q https://raw.githubusercontent.com/krudisar/gpu-tests/master/tf-test-1.py
 python3 /workspace/gpu-test/tf-test-1.py
 
